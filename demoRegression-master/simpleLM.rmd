@@ -45,3 +45,11 @@ summary.lm(mychest)
 
 Now we have two models, it appears that this (mychest) model is better than the other since the Adjusted R-Square is 0.7869 and the Residual standard error came out to be 4.939. In the first (simp) model we had an Adjusted R-Square of 0.7476 and a Residual standard error of 5.376. In comparison, the mychest model is better because it has a larger Adjusted R-square and smaller Residual standard error, this is preferred since it explains more of the variation of error. 
 
+```{r}
+myheadwth <- lm(LENGTH~HEADWTH,data=bears)
+plot(LENGTH~HEADWTH,data=bears)
+abline(myheadwth)
+summary.lm(myheadwth)
+```
+
+In the model above, myheadwth, we can see that the Adjusted R-square went down and the Residual standard error went up. 

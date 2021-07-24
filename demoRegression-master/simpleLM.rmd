@@ -53,3 +53,12 @@ summary.lm(myheadwth)
 ```
 
 In the model above, myheadwth, we can see that the Adjusted R-square went down and the Residual standard error went up. 
+
+```{r}
+myheadlen <- lm(LENGTH~HEADLEN,data=bears)
+plot(LENGTH~HEADLEN,data=bears)
+abline(myheadlen)
+summary.lm(myheadlen)
+```
+
+In the model above, myheadlen, we can see that the Adjusted R-square went up to 0.8434 and the Residual standard error went down to 4.235. Compared to the mychest model (who was in the lead) it had an Adjusted R-Square of 0.7869 and a Residual standard error of 4.939. The myheadlen model is better than all the other models including the mychest model since the Adjusted R-square is higher and the Residual standard error is lower. 
